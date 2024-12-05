@@ -6,7 +6,7 @@ init:
 	npm install -g npm && npm install
 
 serve:
-	cd docs/ && bundle exec jekyll serve
+	cd docs/ && bundle exec jekyll serve --watch
 
 npm_update:
 	npm install -g npm-check-updates
