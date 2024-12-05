@@ -1,14 +1,11 @@
 ---
 layout: default
 title: Home
-lang: en
-permalink: /en/home/
-alternate_lang: /es/home/
 ---
 
 
-# Hi There! 👋
+# Hola Mundo
 
-I’m a Software Engineer, Cybersecurity Specialist, and AI Enthusiast with over a decade of experience designing and developing innovative software solutions. I lead digital transformation projects at the University of Chile’s Computer Science Department, combining technical expertise with strategic thinking to enhance systems' scalability, security, and usability.
+Soy Ingeniero de Software, Especialista en Ciberseguridad y Entusiasta de la Inteligencia Artificial, con más de una década de experiencia en el diseño y desarrollo de soluciones de software innovadoras. Lidero proyectos de transformación digital, combinando experiencia técnica con pensamiento estratégico para mejorar la escalabilidad, seguridad y usabilidad de los sistemas.
 
-I am passionate about teaching and mentoring, serving as part of the academic team for the Software Engineering Diploma at the University of Chile 🇨🇱. My expertise spans secure software development, data analysis, and AI-driven applications, with a strong commitment to open-source technologies.
+Me apasiona enseñar y mentorizar, siendo parte del equipo académico del Diploma de Postítulo en Ingeniería de Software del Departamento de Ciencias de la Computación de la Universidad de Chile. Mi experiencia abarca el desarrollo seguro de software, el análisis de datos y las aplicaciones impulsadas por inteligencia artificial, con un fuerte compromiso con las tecnologías de código abierto. Fuera del trabajo, exploro mis hobbies en robótica y artes marciales, específicamente Bujinkan Budo Taijutsu.
