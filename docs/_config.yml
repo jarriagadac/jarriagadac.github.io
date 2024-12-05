@@ -1,16 +1,17 @@
 title: Juan Arriagada
 email: jarrcan@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: >-
+  I’m a Software Engineer, Cybersecurity Specialist, and AI Enthusiast with 
+  over a decade of experience designing and developing innovative software 
+  solutions. I lead digital transformation projects, combining technical 
+  expertise with strategic thinking to enhance systems' scalability, security, 
+  and usability.
+
+baseurl: ""
+url: "https://jarriagadac.github.io"
+
 twitter_username: jarrcan
 github_username:  jarriagadac
-
-# Build settings
-theme: minima
 
 plugins:
   - jekyll-feed

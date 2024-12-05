@@ -1,0 +1,18 @@
+<header>
+    <div>
+        <nav>
+            <a href="/">Juan Arriagada</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar">
+                <ul>
+                    <li><a {% if page.url == "/" %}class="active"{% endif %}href="/">Home</a></li>
+                    <li><a {% if page.url == "/resume" %}class="active"{% endif %} href="/resume/">Resume</a></li>
+                    <li><a {% if page.url == "/contact" %}class="active"{% endif %} href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
