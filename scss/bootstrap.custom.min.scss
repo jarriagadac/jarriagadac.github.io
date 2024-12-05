@@ -28,4 +28,49 @@ $font-weight-bolder: 900;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// custom styles
+// global
+body {
+    @extend .min-vh-100, .d-flex, .flex-column, .justify-content-between;
+    background: url('/assets/images/background.svg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+// body
+header {
+    @extend .bg-dark, .bg-opacity-75, .text-light;
+    div {
+        @extend .container-xl;
+        nav {
+            @extend .navbar, .navbar-dark, .navbar-expand-lg;
+            > a:first-child { @extend .navbar-brand; }
+            div {
+                @extend .collapse, .navbar-collapse;
+                ul { @extend .navbar-nav; li { @extend .nav-item; a { @extend .nav-link; &.active { @extend .active; } } } } 
+            }
+        }
+    }
+}
+
+main {
+    @extend .container-xl, .clearfix;
+}
+
+footer {
+    @extend .bg-dark, .bg-opacity-75, .text-light;
+    div {
+        @extend .container-xl, .text-center, .p-1;
+        font-size: 0.8rem;
+    }
+}
+
+// elementos
+h1, h2, h3, h4, h5, h6 { @extend .text-center, .text-sm-start; }
+h1 { @extend .mt-3; }
+p { @extend .m-0, .p-0, .bg-light, .bg-opacity-75; }
+
+.about-img {
+    @extend .rounded, .mb-2;
+    @extend .float-sm-start, .me-sm-2;
+    max-width: 200px;
+}
+p:has(.about-img) { @extend .text-center; }
