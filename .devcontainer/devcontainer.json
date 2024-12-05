@@ -1,4 +1,7 @@
 {
 	"name": "Jekyll",
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye"
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+	"postCreateCommand": "make init",
+    "postStartCommand": "make serve",
+	"shutdownAction": "stopContainer"
 }

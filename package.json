@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "chart.js": "^4.4.7",
+    "htmx.org": "^2.0.3",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "sass": "^1.82.0"
+  },
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded scss/:docs/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/:docs/assets/css"
+  }
+}
