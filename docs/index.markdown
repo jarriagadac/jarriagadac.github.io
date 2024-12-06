@@ -4,7 +4,8 @@ title: Home
 permalink: /
 ---
 
-# Hola! :)
+{: .display-1 .bg-transparent .text-center .text-sm-start }
+Hola! :)
 
 ![Profile Image](https://avatars.githubusercontent.com/u/7169909?v=4){: .about-img }
 
