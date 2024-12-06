@@ -38,13 +38,7 @@ Mi enfoque es combinar el conocimiento técnico con un entendimiento práctico d
 
 - Ingeniero de Software en TINET Soluciones Informáticas S.A. (2015/3 a 2015/9): Desarrollo de aplicaciones sobre Weblogic utilizando lenguaje Java EE (EJB, JSF 2, Struts) y tecnologías web (HTML, CSS, Javascript, Bootstrap, jQuery). Análisis de requerimientos, modelado de casos de uso, testing funcional y toma de requerimientos utilizando metodologías ágiles (Scrum, Kanban) para BCI.
 
-{: .mt-2 }
-### Otro Título
-
 - Administrador de Bases de Datos en ForexChile S.A. (2014/9 a 2015/3 – plazo fijo): Responsable de los activos de información, automatización de procesos de negocio, utilizando modelado BPMN con Bizagi y Pentaho para ETL. Bases de datos MySQL, Microsoft SQL Server 2008 y PostgreSQL.
-
-{: .mt-2 }
-#### Otro Título
 
 - Consultor Middleware en Red Hat Chile (2014/1 a 2014/6): Participando en diversos proyectos como referente técnico de las tecnologías middleware de Red Hat y Java EE. Levantamiento, documentación y modelado de procesos.
 
