@@ -37,7 +37,7 @@ body {
 
 // body
 header {
-    @extend .bg-dark, .bg-opacity-75, .text-light;
+    @extend .bg-dark, .bg-opacity-75, .text-light, .mb-4;
     div {
         @extend .container-xl;
         nav {
@@ -53,6 +53,38 @@ header {
 
 main {
     @extend .container-xl, .clearfix;
+    h1, h2, h3, h4, h5, h6 { 
+        @extend .text-center, .text-sm-start, .fw-lighter;
+        @extend .bg-dark, .bg-opacity-75;
+    }
+    h1 {
+        @extend .fs-1;
+        color: $gray-200;
+    }
+    h2 {
+        @extend .fs-3;
+        color: $gray-200;
+    }
+    h3 {
+        @extend .fs-4;
+        color: $gray-200;
+    }
+    h4 {
+        @extend .fs-5;
+        color: $gray-200;
+    }
+
+    p { @extend .m-0, .mt-2, .bg-light, .bg-opacity-75; }
+    
+    .text-justify { text-align: justify; }
+
+    .about-img {
+        @extend .rounded-circle, .float-sm-end, .ms-sm-4, .mb-sm-0;
+        max-width: 250px;
+        min-width: 250px;
+        width: 25%;
+    }
+    p:has(.about-img) { @extend .text-center; background-color: transparent !important; }
 }
 
 footer {
@@ -63,14 +95,42 @@ footer {
     }
 }
 
-// elementos
-h1, h2, h3, h4, h5, h6 { @extend .text-center, .text-sm-start; }
-h1 { @extend .mt-3; }
-p { @extend .m-0, .p-0, .bg-light, .bg-opacity-75; }
+#header_scroll_spy {
+    @extend .sticky-top;
+    @extend .d-flex, .flex-lg-row, .d-lg-block;
+    @extend .fw-normal, .fs-6, .me-4;
+    
+    height: min-content;
+    width: 25%;
+    
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
 
-.about-img {
-    @extend .rounded, .mb-2;
-    @extend .float-sm-start, .me-sm-2;
-    max-width: 200px;
+    div {
+        @extend .d-flex, .pt-1, .ps-2, .pe-2;
+        @extend .bg-dark, .bg-opacity-75, .text-light;
+        i {
+            @extend .me-1;
+        }
+        a {
+            @extend .link-light, .lh-sm;
+            text-decoration: none;
+        }
+        a.active {
+            @extend .bg-dark, .bg-opacity-75;
+        }
+        &.header-2 {
+            padding-left: 10px !important;
+        }
+        &.header-3 {
+            padding-left: 30px !important;
+        }
+        &.header-4 {
+            padding-left: 50px !important;
+        }
+        &.header-5 {
+            padding-left: 70px !important;
+        }
+    }
 }
-p:has(.about-img) { @extend .text-center; }
