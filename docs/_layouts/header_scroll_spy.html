@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.custom.min.css' | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.min.css' | prepend: site.baseurl_root }}">
+    <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | prepend: site.baseurl_root }}" defer></script>
+    <title>Juan Arriagada - {{ page.title }}</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header_scroll_spy">
+    <div>
+        {% include header.html %}
+        <div class="d-flex flex-column flex-lg-row container-xl">
+            <div id="header_scroll_spy">
+                {% assign headers = content | split: '<h' %}
+                {% for header in headers %}
+                    {% if header contains '</h' %}
+                        {% assign header_tag = header | slice: 0, 1 | plus: 0 %}
+                        {% assign header_parts = header | split: '>' %}
+                        {% assign header_text = header_parts[1] | split: '</' | first %}
+                        {% assign header_id = header | split: 'id="' | last | split: '"' | first %}
+                        <div class="header-{{ header_tag }}">
+                            {% if header_tag > 1 %}<i class="bi bi-arrow-return-right"></i>{% endif %}
+                            <a href="#{{ header_id }}">{{ header_text }}</a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <main>{{ content }}</main>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

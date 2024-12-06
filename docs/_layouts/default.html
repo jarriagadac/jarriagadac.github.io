@@ -8,7 +8,7 @@
     <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | prepend: site.baseurl_root }}" defer></script>
     <title>Juan Arriagada - {{ page.title }}</title>
 </head>
-<body class="min-vh-100">
+<body data-bs-spy="scroll" data-bs-target="#scroll-spy">
     <div>
         {% include header.html %}
         <main>{{ content }}</main>
